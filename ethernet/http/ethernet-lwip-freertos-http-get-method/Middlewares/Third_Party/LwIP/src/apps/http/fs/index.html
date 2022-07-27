@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Serial Port</h1>
+
+<p>Serial port setup and connection</p>
+
+<form action="/index.html">
+  <label for="baud">Baud:</label>
+  <select name="baud" id="baud">
+  <option value="115200">115200</option>
+  <option value="9600">9600</option>
+  <option value="19200">19200</option>
+  <option value="38400">38400</option>
+  <option value="57600">57600</option>
+  </select>
+  
+  <br><br>
+  
+  <label for="parity">Parity:</label>
+  <select name="parity" id="parity">
+  <option value="None">None</option>
+  <option value="Odd">Odd</option>
+  <option value="Even">Even</option>
+  <option value="Mark">Mark</option>
+  <option value="Space">Space</option>
+  </select>
+  
+  <br><br>
+   
+  <label for="data">Data Bits:</label>
+  <select name="data" id="data">
+  <option value="8">8 bits</option>
+  <option value="7">7 bits</option>
+  <option value="6">6 bits</option>
+  <option value="5">5 bits</option>
+  </select>
+ 
+  <br><br>
+   
+  <label for="stop">Stop Bits:</label>
+  <select name="stop" id="stop">
+  <option value="1">1 bits</option>
+  <option value="2">2 bits</option>
+  </select>
+ 
+  <br><br>
+   
+  <label for="hardware">Hardware Flow Control:</label>
+  <select name="hardware" id="hardware">
+  <option value="None">None</option>
+  <option value="RTS/CTS">RTS/CTS</option>
+  <option value="DTR/DSR">DTR/DSR</option>
+  <option value="RS485-rts">RS485-rts</option>
+  </select>
+ 
+  <br><br>
+
+  <label for="senddata">Send:</label>
+  <input type="text" id="send" name="send" value="Test">
+  
+  <br><br>
+  
+  <button onclick="httpGet();">Click me</button>
+
+</form>
+
+<script>
+  
+  function httpGet()
+  {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET",window.location, true ); // false for synchronous request
+      console.log();
+      xmlHttp.send(window.location);
+      console.log(window.location);
+      return xmlHttp.responseText;
+  }
+  
+</script> 
+
+</body>
+</html>
