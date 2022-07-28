@@ -12,5 +12,6 @@ The pinouts and all the alternative functionality of the board is given in the F
 ![nucleo_f429zi_morpho_right_2019_8_29](https://user-images.githubusercontent.com/65625392/181428678-3db6f84c-ef26-43b5-a979-92a9277fb3d9.png)
 
 # documents
-stm32f429zi [datasheet](https://www.st.com/resource/en/datasheet/stm32f429zi.pdf)
-[RM0090](https://www.st.com/resource/en/reference_manual/rm0090-stm32f405415-stm32f407417-stm32f427437-and-stm32f429439-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) - reference manual
+
+1.stm32f429zi [datasheet](https://www.st.com/resource/en/datasheet/stm32f429zi.pdf)
+1. [RM0090](https://www.st.com/resource/en/reference_manual/rm0090-stm32f405415-stm32f407417-stm32f427437-and-stm32f429439-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) - reference manual
