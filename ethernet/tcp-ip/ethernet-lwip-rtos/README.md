@@ -1,4 +1,4 @@
-<h1> [tR] </h1>
+## [tR]
 STM32 mikrodenetleyicisinde TCP server oluşturabilmek için STM32CubeMX ile lwIP aktive edildi. Cihaza bir ip ataması yapmak istenildiğinden dolayı lwIP genel ayarlarından “LWIP_DHCP (DHCP Module)” devre dışı bırakılarak kullanıcı tarafından bir ip ataması gerçekleştirildi. Devre dışı bırakılan modülün altında üç farklı seçenek çıkmaktadır bunlar: ip adresi, alt ağ maskesi adresi ve ağ geçidi adresidir. Burada verilecek olan ip adresini kullanıcı belirlemektedir. İstemci olarak kullanılan cihazla aynı domainde bir ip adresi belirlemek gerekmektedir. Bunu yapabilmek içinde komut istemine “ipconfig” komutunu yazılarak ethernet bağlantısının IPv4 adresini öğrenildi ve bu ip adresine göre cihaza bir ip adresi verildi. Ethernet kablo bağlantısı için gerekli pinler ayarlanarak STM32 ile bilgisayar bağlantısı başarılı bir şekilde oluşturuldu. Oluşturulan bu bağlantıyı test etmek amacıyla yapılan ping atma işlemi komut istemi açılarak aşağıda belirtilen komut girildi.  
 
   ping ip addresi
