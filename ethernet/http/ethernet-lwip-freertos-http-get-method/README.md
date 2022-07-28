@@ -1,7 +1,7 @@
    
-    # 
+   ##
    The GET method performs the process of sending the data in the form with the page address clearly, that is, in a format that everyone can see. We can see if data has      been sent in the “Network” section by saying "Inspect". If a button is pressed, the data is added to the address using the GET method, and the data added to this          address is processed by using the STM32 microcontroller.
-    ##
+   ##
  - http://169.254.228.35/index.html?baud=115200&parity=None&data=8&stop=1&hardware=None&send=Test
    ##
    
