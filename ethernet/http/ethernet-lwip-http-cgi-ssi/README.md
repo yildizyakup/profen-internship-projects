@@ -1,3 +1,8 @@
+#[tR]
+Http protokolü ile web sitesi oluşturmak amacıyla STM32CubeMX sayesinde “LWIP_HTTPD” aktive edilmiştir. “main.c” dosyasında “httpd_init()” fonksiyonu çalıştırılarak Http protokolü tanımlanmıştır. PCB dinleme moduna ayarlanmıştır ve tanımlı portla birleştirilmiştir. Oluşturulan web sitesi birkaç sayfadan oluşabilir. Bu çalışmanın ilk aşaması olarak bir ana sayfa oluşturulmuştur. STM32 mikrodenetleyicisini sunucu olarak kullanarak bilgisayar tarayıcısının arama kısmına mikrodenetleyiciye atanan ip girilerek oluşturulan web sayfasına giriş yapılmıştır. Web sayfası olarak UART arayüzü hazırlamak amacıyla ön çalışma olarak SSI ve CGI ile iki farklı sayfa oluşturulmuştur. SSI kullanılarak 2x3 lük bir tablo oluşturulmuştur. Bu tablo içerisinde değerleri zamana bağlı olarak artan değerler bulunmaktadırCGI ile bir form sayfası oluşturulmuştur ve bu form sayfasında isim ve soy isim girildikten sonra “submit” butonuna tıklanarak girilen bilgiler STM32 mikrodenetleyicisine gönderilebilmektedir.  
+Bu sayfalar bulunamazsa ise “404.html” sayfası çağırılır. Bu sayfa sayesinde istenen sayfanın sunucuda bulunamadığı gösterilir.
+
+##[eN]
 “LWIP_HTTPD” has been activated thanks to STM32CubeMX for the purpose of creating a website using the http protocol.
 Http protocol is defined by running “httpd_init()” function in “main.c” file. The PCB is set to listen mode and binded with the defined port.
 The created website may consist of several pages. As the first stage of this study, a home page was created. 
