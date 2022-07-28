@@ -4,3 +4,5 @@ Bu projede amaç 3 farklı analog sinyalden dijital sinyale dönüştürücü il
 >RDEV1  
 
 Yukarıda verilen komut terminale yazılıp enter tuşuna basıldığı zaman işlem gerçekleştirilir. Eğer ki dizinin ilk elemanı olarak “R” karakteri gelmişse “readFlag” güncellenir ve 1 yapılır sonrasında kesme işlemi için komutun devamına bakılır ve “strncmp” fonksiyonu ile hangi cihazın geldiği karşılaştırılır. Gelen cihaza göre cihaz adresi seçilir ve “i2cFlag” güncellenerek 1 haline getirilir. “i2cFlag” 1 olduktan sonra yukarıda bahsedilen okuma işlemi yapılır. En son okunan değer ekrana yazdırıldıktan sonra “resetFlag” güncellenerek 1 yapılır. “resetFlag” sayesinde config registera reset değerleri atanarak ayarlamalar sıfırlanır. 
+
+[ADS1015 Datasheet](https://cdn-shop.adafruit.com/datasheets/ads1015.pdf)
