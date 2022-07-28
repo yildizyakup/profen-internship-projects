@@ -1,8 +1,8 @@
 Terminalden yazılan bir yazıda yazının sonuna bitirme karakterleri eklenebilir. Bunlar CR = Carriage Return ve LF = Line Feed olarak isimlendirilir. UART tan bir bilgi gönderildiği zaman bu karakterler yeni bir komut almak haberleşmeyi sonlandırabilir bunun için HAL kütüphanesinde " stm32f4xx_hal_uart.c " isimli dosyanın içerisinde “UART_Receive_IT” fonksiyonunda bir düzenleme yapılması gerekir ki bu sayede bu karakterler geldiği zaman işletilebilsin ve haberleşme devam edebilsin. Değiştirilmesi gereken kısım aşağıda belirtilen satırdaki gibi ayarlanmıştır.
 
-<code>
-if ((--huart->RxXferCount == 0U) || (strchr(pdata8bits,'\n') != '\0') || (strchr(pdata8bits,'\r') != '\0')) 
-<code>
+
+> if ((--huart->RxXferCount == 0U) || (strchr(pdata8bits,'\n') != '\0') || (strchr(pdata8bits,'\r') != '\0')) 
+
 
 Belirtilen kodda gelen veri CR veya LF ye eşit olduğunda kesme sonlandırılır. Haberleşmenin devam edebilmesi amacıyla “HAL_UART_RxCpltCallback” fonksiyonunda “HAL_UART_Receive_IT” fonksiyonu tekrardan çalıştırılarak kesme bir daha aktive edilmiş olur bu sayede haberleşmeye devam edilebilir.
 
