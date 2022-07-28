@@ -8,7 +8,7 @@ The data sent after the file name are the settings available in the form.
 In the incoming file request, if the file name is "index.html" a parsing operation is performed according to the "? & =” symbols.
 The parsed data is compared with the "strcmp" function, and it adjusts the parameters of the UART handler structure depending on which value it is.
 
- # [tR]
+## [tR]
 GET metodu, formdaki verileri sayfa adresi açık bir şekilde yani herkesin görebileceği biçimde gönderme işlemi yapmaktadır. Bunu sayfa bağlantısını incele diyerek     “Network” kısmında veri gönderilip gönderilmediğini görebiliriz. Eğer ki bir butona basılırsa GET metodu sayesinde veriler adrese eklenir ve bu adrese eklenen veriler STM32 mikrodenetleyicisi ile işlenir. Adres çubuğuna eklenen veriler örnek olarak verilen url gibi gözükmektedir.  
 
 http://169.254.228.35/index.html?baud=115200&parity=None&data=8&stop=1&hardware=None&send=Test  
