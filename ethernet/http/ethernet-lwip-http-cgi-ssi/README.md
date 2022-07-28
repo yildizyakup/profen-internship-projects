@@ -1,3 +1,10 @@
+“LWIP_HTTPD” has been activated thanks to STM32CubeMX for the purpose of creating a website using the http protocol.
+Http protocol is defined by running “httpd_init()” function in “main.c” file. The PCB is set to listen mode and binded with the defined port.
+The created website may consist of several pages. As the first stage of this study, a home page was created. 
+Using the STM32 microcontroller as a server, the web page was entered by entering the ip assigned to the microcontroller in the search section of the browser.
+In order to prepare the UART interface as a web page, two different pages were created with SSI and CGI as a preliminary study. A 2x3 table was created using SSI. In this table, values are constantly increasing
+A form page has been created with CGI, and after entering the name and surname on this form page, the information can be sent to the STM32 microcontroller by clicking on the “submit” button. 
+If these pages are not found, click "404.the ”html" page is called. Thanks to this page, it is shown that the requested page cannot be found on the server.
 In order to create a UART interface as a web page, a file named cgiuart.html has been created. 
 An html form is created in this file. 
 The created form is likened to the serial port settings of the Tera Term program.
