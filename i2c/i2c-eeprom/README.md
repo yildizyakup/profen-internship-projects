@@ -1,3 +1,4 @@
+## [tR]  
 Cihaz adresi “0xA0” olarak belirlenmiştir. EEPROM a veri aktarmak için HAL kütüphanesinde bulunan iki farklı fonksiyon vardır bunlar şunlardır:
 
 •	HAL_I2C_Master_Transmit()  
